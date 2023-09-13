@@ -6,21 +6,21 @@ stage('Build')
 {
 steps{
 echo "Building the Code.........."
-bat "C:\Program Files\Maven\apache-maven-3.9.4\bin\mvn clean"
+bat "mvn clean"
 }
 }
 stage('Test') 
 {
 steps{
 echo "Testing the Code.........."
-bat "C:\Program Files\Maven\apache-maven-3.9.4\bin\mvn test"
+bat "mvn test"
 }
 }
 stage('Compile') 
 {
 steps{
 echo "Compiling the Project.........."
-bat "C:\Program Files\Maven\apache-maven-3.9.4\bin\mvn compile"
+bat "mvn compile"
 }
 }
 stage('Deploy') 
